@@ -289,13 +289,13 @@ jobs:
         path: kernel_workspace/AnyKernel3/*
         compression-level: 9
 
-    - name: Upload Rikka Kernel to release
-      if: env.CHECK_FILE_IS_OK == 'true'
-      uses: Shopify/upload-to-release@v2.0.0
-      with:
-        name: ${{ env.ANY_KERNEL_NAME }}-${{ env.DEVICE }}-${{ env.BUILD_TIME }}${{ env.UPLOADNAME }}
-        path: kernel_workspace/AnyKernel3/*
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Upload Rikka Kernel to release
+#      if: env.CHECK_FILE_IS_OK == 'true'
+#      uses: Shopify/upload-to-release@v2.0.0
+#      with:
+#        name: ${{ env.ANY_KERNEL_NAME }}-${{ env.DEVICE }}-${{ env.BUILD_TIME }}${{ env.UPLOADNAME }}
+#        path: kernel_workspace/AnyKernel3/*
+#        repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload DTBO image
       if: env.CHECK_DTBO_IS_OK == 'true'
