@@ -1,4 +1,4 @@
-name: Build Rikka Kernel
+name: Build Rikka Raphael Kernel
 on:
   watch:
     types: [started]
